@@ -26,18 +26,21 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
 - has_many :groups, through: :groups_users
 - has_many :group_users
+- has_many :comments
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groups|string|null: false|
+|name|string|null: false|
 ### Association
 - has_many :users, through: :groups_users
 - has_many :group_users
+- has_many :comments
+
 
 ## groups_usersテーブル
 |Column|Type|Options|
@@ -52,11 +55,11 @@ Things you may want to cover:
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
-|image|image|null: false|
+|text|text|
+|image|image|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :post
+- belongs_to :group
 - belongs_to :user
 
