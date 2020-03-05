@@ -34,7 +34,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|username|string|null: false|
+|groups|string|null: false|
 ### Association
 - has_many :users, through: :groups_users
 - has_many :group_users
