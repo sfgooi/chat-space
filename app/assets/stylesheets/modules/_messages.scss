@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+//サイドバー
+.side_bar{
+  width: 300px;
+  height: 100%;
+  &__header{
+  width: 300px;
+  height: 100px;
+  background-color: #253141;
+  padding: 0 20px;
+  display: flex;
+  text-align: center;
+  line-height: 25px;
+    &__box{
+      background-color: #333333;
+    height: 20px;
+    width: 260px;
+    display: flex;
+    margin: auto;
+      &__user-name{
+        background-color: #253141;
+        height: 20px;
+        width: 100%;
+        text-align: left;
+        color: #ffffff;
+        font-size: 16px;
+      }
+      &__icon {
+      background-color: #253141;
+      width: 60px;
+      height: 20px;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      margin: right;
+      text-align: center;
+        &__pencil{
+        display: inline-block;
+        -webkit-text-fill-color: #ffffff;
+        text-align: right;
+        margin: 0px 5px 0px 5px;
+        }
+      &__cog{
+        display: inline-block;
+        -webkit-text-fill-color: #ffffff;
+        text-align: right;
+      }
+      }
+    }
+  }
+  &__contents{
+  width: 300px;
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  display: flex;
+    &__group{
+      padding: 20px;
+      font-size: 15px;
+      color: white;
+      height: 100%;
+    &__message{
+      padding-top: 5px;
+      font-size: 11px;
+      }
+    }
+  }
+}
+
+//コンテンツ
+.main_chat{
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+      .chat_group_info{
+        background-color: #ffffff;
+        height: 100px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+          &__left-box{
+            height: 100px;
+            width: 100px;
+            margin-left: 40px;
+              &__group{
+                font-size: 20px;
+                color: #333333;
+                padding-top: 35px;
+              }
+              &__menber{
+                font-size: 12px;
+                color: #999999;
+                padding-top: 15px;
+              }
+          }
+          &__edit{
+            height: 40px;
+            width: 72px;
+            margin-right: 40px;
+            margin-top: 28px;
+            font-size: 16px;
+            line-height: 40px;
+            color: #38aef0;
+            text-align: center;
+            border: 1px solid;
+            -webkit-text-fill-color: #38aef0;
+            &__btn{
+            text-decoration: none;
+          }
+      }
+    }
+      .chat-main__content{
+        background-color: #fafafa;
+        height: calc(100vh - 190px);
+        &__coment{
+          background-color: #fafafafa;
+          height: 105px;
+          width: 100%;
+          display: flex;
+            &__user-data{
+              font-size: 16px;
+              color: #333333;
+              height: 24px;
+              width:  100%;
+              margin-left: 40px;
+              margin-top: 35px;
+                &__name{
+                  background-color: #fafafa;
+                  width:100%;
+                  position: relative;
+                  &__time{
+                    background-color: #fafafafa;
+                    font-size: 12px;
+                    color: #999999;
+                    position: absolute;
+                    left: 50px;
+                    top: 0px;
+                  }
+                }
+                &__new{
+                  background-color: #fafafafa;
+                  padding-top: 12px;
+                }
+            }
+        }
+      }
+
+//投稿フォーム
+      .chat-main__form{
+        background-color: #d2d2d2;
+        height: 90px;
+        width:  100%;
+        padding: 20px 40px;
+        justify-content: flex-end;
+          &__box{
+          background-color: white;
+          display: flex;
+          height: 50px;
+          width: 1050px;
+          position: relative;
+          line-height: 30px;
+          padding: 10px;
+          justify-content: space-between;
+            &__input{
+              color: #999999;
+            }
+            &__icon{
+              position: absolute;
+              left: 1020px;
+              input{display: none;}
+            }
+            &__send{
+              background-color: skyblue;
+              height: 50px;
+              width: 100px;
+              position: absolute;
+              right: 50px;
+              bottom: 20px;
+              color: white;
+              text-align: center;
+              line-height: 50px;
+            }
+        }
+      }
+  }
