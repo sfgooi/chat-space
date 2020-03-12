@@ -49,7 +49,7 @@
         text-align: right;
         margin: 0px 5px 0px 5px;
         }
-      &__cog{
+      &__cog:link, a:visited, a:hover, a:active{
         display: inline-block;
         -webkit-text-fill-color: #ffffff;
         text-align: right;
