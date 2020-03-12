@@ -22,10 +22,10 @@
   line-height: 25px;
     &__box{
       background-color: #333333;
-    height: 20px;
-    width: 260px;
-    display: flex;
-    margin: auto;
+      height: 20px;
+      width: 260px;
+      display: flex;
+      margin: auto;
       &__user-name{
         background-color: #253141;
         height: 20px;
@@ -61,15 +61,17 @@
   width: 300px;
   height: calc(100vh - 100px);
   background-color: #2f3e51;
-  display: flex;
+  a {
+    text-decoration: none;
+    color: white;
+  }
     &__group{
       padding: 20px;
       font-size: 15px;
       color: white;
-      height: 100%;
-    &__message{
-      padding-top: 5px;
-      font-size: 11px;
+      &__message{
+        padding-top: 5px 0px 40px 0px;
+        font-size: 11px;
       }
     }
   }

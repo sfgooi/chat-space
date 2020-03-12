@@ -5,16 +5,20 @@
         = current_user.name
       .side_bar__header__box__icon
         .side_bar__header__box__icon__pencil
-          = link_to "https://#/", class: "side_bar__box__icon" do
-            = icon('far','edit')
+          = link_to new_group_path do
+            = icon('far','edit', class: 'icon')
         .side_bar__header__box__icon__cog
           = link_to edit_user_path(current_user) do
             = icon('fas','cog', class: 'icon')
-  .side_bar__contents
-    .side_bar__contents__group
-      techcamp
-      .side_bar__contents__group__message
-        まだめっせーじがありません
 
-  
+  .side_bar__contents
+    - current_user.groups.each do |group|
+      .side_bar__contents__group
+        = link_to '#', class: "chat-main__content__coment" do
+          .side_bar__contents__group__name
+            = group.name
+          .side_bar__contents__group__message
+            まだめっせーじがありません
+
+      
    
