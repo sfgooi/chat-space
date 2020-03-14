@@ -90,17 +90,19 @@
         display: flex;
           &__left-box{
             height: 100px;
-            width: 100px;
             margin-left: 40px;
               &__group{
                 font-size: 20px;
                 color: #333333;
                 padding-top: 35px;
+                width: max-content;
               }
               &__menber{
                 font-size: 12px;
                 color: #999999;
                 padding-top: 15px;
+                // display: inline-block;
+
               }
           }
           &__edit{
@@ -159,37 +161,36 @@
       .chat-main__form{
         background-color: #d2d2d2;
         height: 90px;
-        width:  100%;
         padding: 20px 40px;
-        justify-content: flex-end;
-          &__box{
-          background-color: white;
+        .new_message{
           display: flex;
-          height: 50px;
-          width: 1050px;
+        .box{
           position: relative;
-          line-height: 30px;
-          padding: 10px;
-          justify-content: space-between;
-            &__input{
-              color: #999999;
-            }
-            &__icon{
-              position: absolute;
-              left: 1020px;
-              input{display: none;}
-            }
-            &__send{
-              background-color: skyblue;
-              height: 50px;
-              width: 100px;
-              position: absolute;
-              right: 50px;
-              bottom: 20px;
-              color: white;
-              text-align: center;
-              line-height: 50px;
-            }
+          width: 100%;
+          &__text{
+            height: 50px;
+            padding: 0 40px 0 10px;
+            width: 100%;
+          }
+          &__icon{
+            position: absolute;
+            font-size: 1.3rem;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            &__hidden{display: none;}
+          }
+        }
+        .send{
+          background-color: skyblue;
+          height: 50px;
+          width: 100px;
+          padding: 0 30px;
+          margin-left: 15px;
+          color: white;
+          text-align: center;
+          cursor: pointer;
         }
       }
+    }
   }

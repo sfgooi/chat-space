@@ -14,11 +14,8 @@
   .side_bar__contents
     - current_user.groups.each do |group|
       .side_bar__contents__group
-        = link_to '#', class: "chat-main__content__coment" do
+        = link_to group_messages_path(group) do
           .side_bar__contents__group__name
             = group.name
           .side_bar__contents__group__message
-            まだめっせーじがありません
-
-      
-   
+            = group.show_last_message
