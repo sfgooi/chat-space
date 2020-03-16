@@ -1,6 +1,5 @@
 $(function(){ 
   function buildHTML(message){
-    console.log(message)
    if ( message.image ) {
      var html =
       `<div class="chat-main__content__coment">
