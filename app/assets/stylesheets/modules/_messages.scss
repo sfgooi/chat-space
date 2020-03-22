@@ -46,13 +46,22 @@
         &__pencil{
           display: inline-block;
           -webkit-text-fill-color: #ffffff;
-         text-align: right;
-          margin: 0px 5px 0px 5px;
-        }
-        &__cog:link, a:visited, a:hover, a:active{
-          display: inline-block;
-          -webkit-text-fill-color: #ffffff;
           text-align: right;
+          margin: 0px 5px 0px 5px;
+
+        .far.fa-edit.icon::before{
+          -webkit-text-fill-color: #ffffff;
+        }
+
+        }
+        &__cog{
+          display: inline-block;
+          text-align: right;
+          -webkit-text-fill-color: #ffffff;
+        .fas.fa-cog.icon{
+          -webkit-text-fill-color: #ffffff;
+        }
+          
         }
       }
     }
@@ -116,7 +125,10 @@
             text-align: center;
             border: 1px solid;
             -webkit-text-fill-color: #38aef0;
+          a{
             text-decoration: none;
+
+          }
 
               
       }
@@ -129,18 +141,22 @@
         padding: 35px 0px 0px 40px;
         &__coment{
           background-color: #fafafafa;
-          height: 105px;
+          height: 40%;
           width: 100%;
+          position: relative;
             &__user-data{
               font-size: 16px;
               color: #333333;
               height: 24px;
               width:  100%;
+              position: absolute;
 
                 &__name{
                   background-color: #fafafa;
                   width:100%;
                   display: flex;
+                
+                  
                   &__time{
                     background-color: #fafafafa;
                     font-size: 12px;
@@ -150,7 +166,9 @@
                 }
                 &__new{
                   background-color: #fafafafa;
-                  padding-top: 12px;
+                  padding-bottom: 40px;
+                 
+                  
                 }
             }
         }
