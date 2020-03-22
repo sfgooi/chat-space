@@ -124,9 +124,10 @@
             color: #38aef0;
             text-align: center;
             border: 1px solid;
-            -webkit-text-fill-color: #38aef0;
+            
           a{
             text-decoration: none;
+            -webkit-text-fill-color: #38aef0;
 
           }
 
@@ -143,6 +144,7 @@
           background-color: #fafafafa;
           height: 25%;
           width: 100%;
+          margin-top: 46px;
           position: relative;
             &__user-data{
               font-size: 16px;
